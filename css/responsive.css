@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Responsive overrides — mobile-first base lives in base.css/sections.css,
+   this file holds breakpoint-specific tweaks only.
+   ========================================================================== */
+
+/* ---- Large desktop: roomier section rhythm ---- */
+@media (min-width: 1440px) {
+  .container {
+    padding-inline: var(--space-xl);
+  }
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 1024px) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero {
+    padding-top: 5.5rem;
+    align-items: flex-start;
+  }
+
+  .hero__title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+  }
+
+  .hero__scroll-cue {
+    display: none; /* avoid crowding a short mobile viewport */
+  }
+
+  .highlight-block {
+    padding: var(--space-lg);
+  }
+
+  .card {
+    padding: var(--space-md);
+  }
+
+  .compare-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .site-footer__top {
+    flex-direction: column;
+  }
+}
+
+/* ---- Reduce scene visual load on small / low-power screens ----
+   (JS also reads this via matchMedia to lower geometry/DPR — keep in sync) */
+@media (max-width: 640px), (max-height: 500px) {
+  #scene-canvas {
+    filter: none; /* placeholder — avoid heavy CSS filters over the canvas on mobile */
+  }
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Design tokens — Aeterna Estates by Auxo Holdings
+   Edit values here only; never hardcode colors/fonts elsewhere in the CSS.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand colors ---- */
+  --color-bg: #EEEEEE;          /* page background */
+  --color-brand: #6FCF97;       /* primary accent — CTAs, links, small highlights */
+  --color-deep: #1F6F5F;        /* deep green — headings, nav, dark blocks */
+  --color-mid: #2FA084;         /* mid green — secondary accents, hovers, gradients */
+
+  /* ---- Derived / supporting colors (not in the original palette — confirm with client) ---- */
+  --color-ink: #16221E;         /* near-black body text on light backgrounds */
+  --color-ink-soft: #46534E;    /* secondary/muted text */
+  --color-white: #FFFFFF;
+  --color-card-bg: rgba(255, 255, 255, 0.72); /* translucent card over the 3D scene */
+  --color-border: rgba(31, 111, 95, 0.16);
+
+  /* ---- Typography ---- */
+  --font-display: "Garnet", "Marid", "Playfair Display", Georgia, serif;
+  --font-body: "Lovato", "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --fs-hero: clamp(2.75rem, 6vw, 5.5rem);
+  --fs-h1: clamp(2.25rem, 4.5vw, 3.5rem);
+  --fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-eyebrow: 0.8rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.9rem;
+  --fs-stat: clamp(3rem, 6vw, 5rem);
+
+  --lh-body: 1.65;
+  --lh-tight: 1.15;
+
+  --ls-eyebrow: 0.16em;
+  --ls-wide: 0.04em;
+
+  /* ---- Spacing scale ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* ---- Layout ---- */
+  --content-max: 1200px;
+  --content-narrow: 760px;
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+
+  /* ---- Motion ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 300ms;
+  --dur-med: 550ms;
+  --dur-slow: 900ms;
+
+  /* ---- Layering ---- */
+  --z-scene: 0;
+  --z-content: 10;
+  --z-nav: 100;
+  --z-overlay: 1000;
+}
