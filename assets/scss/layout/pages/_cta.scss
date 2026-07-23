@@ -1,0 +1,163 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+.cta1-section-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/bg/cta-bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cta-header {
+        @media #{$md} {
+            text-align: center;
+        }
+        @media #{$xs} {
+            text-align: center;
+        }
+    }
+    .cta-btn-area {
+        text-align: end;
+        @media #{$md} {
+            text-align: center;
+            margin-top: 30px;
+        }
+        @media #{$xs} {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .header-btn1 {
+            background: var(--ztc-bg-bg-1);
+            color: var(--ztc-text-text-3);
+            img {
+                filter: brightness(0);
+            }
+            &:hover {
+                background: var(--ztc-text-text-2);
+                transition: all .4s;
+                color: var(--ztc-text-text-1);
+                img {
+                    transition: all .4s;
+                    filter: none;
+                }
+            }
+        }
+        .header-btn1.btn1 {
+            background: none;
+            border: 1px solid var(--ztc-bg-bg-1);
+            color: var(--ztc-text-text-1);
+            margin-left: 16px;
+            img {
+                filter: brightness(0) invert(1);
+            }
+            &:hover {
+                background: var(--ztc-text-text-2);
+                transition: all .4s;
+                color: var(--ztc-text-text-1);
+                border: 1px solid var(--ztc-text-text-2);
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.cta2-section-area {
+    position: relative;
+    margin-bottom: 130px;
+    z-index: 1;
+    .images  {
+        img {
+            height: 310px !important;
+            width: 100% !important;
+            @media #{$xs} {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            @media #{$md} {
+                height: 100% !important;
+                width: 100% !important;
+                object-fit: cover;
+            }
+        }
+    }
+    .cta-content-area {
+        background: var(--ztc-bg-bg-4);
+        padding: 32px 50px;
+        position: relative;
+        @media #{$xs} {
+            height: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        @media #{$md} {
+            height: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn-area1 {
+            .header-btn2 {
+                background: var(--ztc-text-text-7);
+                color: var(--ztc-text-text-1);
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.cta3-section-area {
+    position: relative;
+    margin-bottom: 130px;
+    z-index: 1;
+    .cta-bg-area {
+        background: var(--ztc-bg-bg-6);
+        border-radius: 8px;
+        padding: 100px 80px;
+        @media #{$xs} {
+            padding: 30px;
+            text-align: center;
+        }
+        @media #{$md} {
+            padding: 40px;
+            text-align: center;
+        }
+        .cta-btn-area {
+            text-align: end;
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+            @media #{$md} {
+                margin-top: 30px;
+                text-align: center;
+            }
+            .header-btn3 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-bg-bg-6);
+                display: inline-block;
+                &:hover {
+                    background: var(--ztc-text-text-10);
+                    color: var(--ztc-text-text-1);
+                    transition: all .4s;
+                    img {
+                        filter: brightness(0) invert(1);
+                        transition: all .4s;
+                    }
+                }
+            }
+
+            .header-btn3.btn {
+                background: var(--ztc-text-text-10);
+                color: var(--ztc-text-text-1);
+                margin-left: 16px;
+                &:hover {
+                    background: var(--ztc-bg-bg-1);
+                    color: var(--ztc-text-text-10);
+                    img {
+                        filter: brightness(0);
+                    }
+                }
+            }
+        }
+    }
+}
+/*============= CTA CSS AREA ENDS===============*/

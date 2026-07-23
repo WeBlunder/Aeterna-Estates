@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Aeterna Estates theme override.
+   The Homz template drives every color in main.css off the --ztc-* custom
+   properties defined in its own :root block. Because this stylesheet loads
+   AFTER main.css, redefining the same custom properties here overrides them
+   site-wide — every button, heading, link, and background that references
+   var(--ztc-bg-bg-2) etc. picks up the new value automatically. Nothing in
+   main.css itself needs to be touched.
+
+   Aeterna brand palette:
+     background : #EEEEEE
+     brand      : #6FCF97
+     deep       : #1F6F5F
+     mid        : #2FA084
+   ========================================================================== */
+
+:root {
+  /* ---- Text colors ---- */
+  --ztc-text-text-2: #1F6F5F;   /* was dark teal #164D59 -> deep */
+  --ztc-text-text-3: #163F35;   /* was near-black #262731 -> darker deep (hover states) */
+  --ztc-text-text-6: #1F6F5F;   /* was dark green #193B33 -> deep */
+  --ztc-text-text-9: #2FA084;   /* was bright blue #0641E7 -> mid */
+  --ztc-text-text-12: #2FA084;  /* was teal accent #1E9888 -> mid */
+  --ztc-text-text-13: #1F6F5F;  /* was dark blue #194290 -> deep */
+
+  /* ---- Background colors ---- */
+  --ztc-bg-bg-2: #1F6F5F;   /* was dark teal #164D59 -> deep (primary brand bg, buttons, sticky nav) */
+  --ztc-bg-bg-3: #EEEEEE;   /* was near-white #F9F9F9 -> Aeterna background */
+  --ztc-bg-bg-4: #6FCF97;   /* was gold #F7CF5C -> brand accent */
+  --ztc-bg-bg-5: #EEEEEE;   /* was light gray #F4F4F4 -> Aeterna background */
+  --ztc-bg-bg-6: #2FA084;   /* was bright blue #0641E7 -> mid */
+  --ztc-bg-bg-7: #2FA084;   /* was teal accent #1E9888 -> mid */
+  --ztc-bg-bg-8: #EEEEEE;   /* was light gray #F7F7F7 -> Aeterna background */
+  --ztc-bg-bg-9: #1F6F5F;   /* was orange-red #E35C2F -> deep (tag badges) */
+  --ztc-bg-bg-10: #1F6F5F;  /* was dark blue #194290 -> deep */
+
+  /* body background */
+  --ztc-bg-bg-1: #EEEEEE;
+}
+
+body {
+  background-color: #EEEEEE;
+}

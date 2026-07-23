@@ -1,0 +1,89 @@
+@use '../../utils/' as * ;
+
+/*============= FAQ CSS AREA ===============*/
+.faq-section-area {
+   .faq-header-area {
+    .btn-area1 {
+        .header-btn1 {
+            margin-top: 32px;
+        }
+        .header-btn1.btn2 {
+            margin-left: 18px;
+            margin-top: 32px;
+            background: var(--ztc-text-text-3);
+        }
+    }
+   } 
+
+   .accordian-area {
+    .accordion {
+        .accordion-item {
+            border: none;
+            background: var(--ztc-text-text-2);
+            border-radius: 10px;
+            transition: all .4s;
+            .accordion-button:not(.collapsed) {
+                background: none !important;
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+                &::before {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                &::after {
+                    filter: brightness(0) invert(1);
+                }
+            }
+            button {
+                color: var(--ztc-text-text-3);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-semibold);
+                line-height: 24px;     
+                display: inline-block; 
+                box-shadow: none;
+                padding: 0;
+                border-radius: 8px;
+                background: var(--Home-2-BG, #EAEBEB);
+                padding: 24px;
+                transition: all .4s;
+                &::after {
+                    filter: brightness(0);
+                    position: absolute;
+                    right: 24px;
+                    height: 2px;
+                    width: 14px;
+                    display: inline-block;
+                    background: var(--ztc-text-text-3);
+                    top: 35px;
+                }
+
+                &::before {
+                    filter: brightness(0);
+                    position: absolute;
+                    right: 24px;
+                    height: 2px;
+                    width: 14px;
+                    display: inline-block;
+                    background: var(--ztc-text-text-3);
+                    top: 35px;
+                    transform: rotate(90deg);
+                    content: "";
+                }
+            }
+            .accordion-body {
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font2);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 28px;
+                padding: 0 24px 24px 24px;
+                opacity: 80%;              
+            }
+        }
+    }
+   }
+}
+/*============= FAQ CSS AREA ===============*/

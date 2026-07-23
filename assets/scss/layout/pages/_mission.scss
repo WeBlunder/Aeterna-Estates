@@ -1,0 +1,24 @@
+@use '../../utils/' as * ;
+
+/*============= MISSION CSS AREA ENDS ===============*/
+.mission-section-area {
+    .mission-author-area {
+        .mission-content {
+            @media #{$xs} {
+                text-align: center;
+            }
+            @media #{$md} {
+                text-align: center;
+            }
+        }
+        .images {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+/*============= MISSION CSS AREA ENDS ===============*/

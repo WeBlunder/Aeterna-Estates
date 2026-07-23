@@ -1,0 +1,386 @@
+@use '../utils' as *;
+
+/*============= ABOUT CSS AREA ===============*/
+.about1-section-area {
+    .about-images-area {
+        .author-images {
+            .img1 {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+            .city-area {
+                background: var(--ztc-bg-bg-2);
+                border-radius: 8px;
+                padding: 16px;
+                margin-top: 30px;
+                @media #{$xs} {
+                    margin-bottom: 30px;
+                }
+                @media #{$md} {
+                    margin-bottom: 30px;
+                }
+                .icons {
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    display: inline-block;
+                    border-radius: 8px;
+                    transition: all .4s;
+                    background: var(--ztc-bg-bg-1);
+                    position: absolute;
+                }
+
+                .content {
+                    padding-left: 60px;
+                    
+                    a {
+                        color: var(--ztc-bg-bg-1);
+                        font-family: var(--ztc-family-font2);
+                        font-size: var(--ztc-font-size-font-s20);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-semibold);
+                        line-height: 20px; 
+                        display: inline-block;
+                        transition: all .4s;
+                        margin-bottom: 12px;                     
+                    }
+                    p {
+                        color: var(--ztc-bg-bg-1);
+                        font-family: var(--ztc-family-font2);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-regular);
+                        line-height: 20px; 
+                        display: inline-block;
+                        transition: all .4s;
+                        margin-bottom: 12px;
+                        opacity: 0.8;                     
+                    }
+                }
+            }
+        }
+    }
+
+    .about-content-header {
+        background: #EAEBEB;
+        border-radius: 8px;
+        padding: 30px;
+        width: 570px;
+        position: relative;
+        left: -100px;
+        @media #{$xs} {
+            margin-top: 30px;
+            left: 0;
+            width: 100%;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+// Homepage 02 //
+.about2-section-area {
+   .about-header {
+    position: relative;
+    @media #{$xs} {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    @media #{$md} {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .counter-area {
+        background: var(--ztc-bg-bg-4);
+        padding: 30px;
+        display: inline-block;
+        position: absolute;
+        bottom: -290px;
+        right: -50px;
+        z-index: 3;
+        text-align: center;
+        h2 {
+            color: var(--ztc-text-text-7);
+            font-family: var(--ztc-family-font2);
+            font-size: var(--ztc-font-size-font-s50);
+            font-style: normal;
+            font-weight: var(--ztc-weight-semibold);
+            line-height: 50px;
+            margin-bottom: 16px;           
+        }
+        p {
+            color: var(--ztc-text-text-7);
+            font-family: var(--ztc-family-font2);
+            font-size: var(--ztc-font-size-font-s20);
+            font-style: normal;
+            font-weight: var(--ztc-weight-semibold);
+            line-height: 20px;
+            text-transform: uppercase;           
+        }
+    }
+   } 
+   .images-area {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    a {
+        color: var(--ztc-text-text-7);
+        font-family: var(--ztc-family-font2);
+        font-size: var(--ztc-font-size-font-s20);
+        font-style: normal;
+        font-weight: var(--ztc-weight-semibold);
+        line-height: 20px;
+        text-transform: uppercase; 
+        transition: all .4s;
+        display: inline-block;
+        margin-top: 20px; 
+        position: relative;
+        z-index: 2;     
+    }
+
+   }
+   .pera-header{
+    @media #{$xs} {
+    margin-top: 30px;
+    text-align: center;
+    }   
+    @media #{$md} {
+       margin-top: 30px;
+       text-align: center;
+       }
+   }
+}
+
+// Homepage 03 //
+.about3-section-area {
+    position: relative;
+    .about3-images-area {
+        position: relative;
+        @media #{$xs} {
+            text-align: center;
+        }
+        @media #{$md} {
+            text-align: center;
+        }
+        .img1 {
+            position: relative;
+            @media #{$md} {
+                left: -100px;
+            }
+            img {
+                width: 370px;
+                height: 481px;
+                object-fit: contain;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .img2 {
+            position: relative;
+            top: 0;
+            right: -200px;
+            margin-top: -480px;
+            padding-top: 130px;
+            @media #{$md} {
+                right: -130px;
+            }
+            @media #{$xs} {
+                right: 0;
+                margin-top: 30px;
+                padding-top: 0;
+            }
+            img {
+                width: 370px;
+                height: 481px;
+                object-fit: contain;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .auhto-area { 
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            @media #{$md} {
+                left: 60px;
+            }
+            @media #{$xs} {
+                position: relative;
+                margin-top: 30px;
+            }
+            h2 {
+                color: var(--ztc-text-text-9);
+                font-family: var(--ztc-family-font2);
+                font-size: var(--ztc-font-size-font-s32);
+                font-style: normal;
+                font-weight: var(--ztc-weight-semibold);
+                line-height: 32px;              
+            } 
+            p {
+                font-family: var(--ztc-family-font2);
+                font-size: var(--ztc-font-size-font-s16);
+                line-height: var(--ztc-font-size-font-s16);
+                font-weight: var(--ztc-weight-regular);
+                color: var(--ztc-text-text-11);
+
+            }
+        }
+    }
+
+   .about-content-area {
+    padding: 0 100px 0 0;
+    @media #{$xs} {
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+    @media #{$md} {
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+   } 
+}
+
+// Homepage 04 //
+.about4-section-area {
+    .about-all-images {
+        .images {
+            .img1 {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .about4-header {
+        padding: 0 0 0 70px;
+        @media #{$xs} {
+            padding: 0;
+            margin-top: 30px;
+            text-align: center;
+        }
+        @media #{$md} {
+            padding: 0;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}
+
+// Homepage 05 //
+.about5-section-area {
+    position: relative;
+    padding: 170px 0 170px;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 80%;
+        width: 30%;
+        left: 0;
+        background: var(--ztc-bg-bg-8);
+        top: 10%;
+        z-index: -1;
+        @media #{$xs} {
+            display: none;
+        }
+        @media #{$md} {
+            display: none;
+        }
+    }
+    @media #{$xs} {
+        padding: 50px 0 50px;
+    }
+    @media #{$md} {
+        padding: 50px 0 50px;
+    }
+    .counter-boxarea {
+        padding: 0 80px 0 0;
+        @media #{$xs} {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .counter-box.after {
+            padding-bottom: 0;
+            border: none !important;
+        }
+        .counter-box.before {
+            padding-top: 0;
+        }
+        .counter-box {
+            display: block;
+            position: relative;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #CBD3E2;
+            text-align: center;
+            h2 {
+                color: var(--ztc-text-text-10);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s32);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 32px;     
+                margin-bottom: 16px;         
+            }
+            p {
+                color: var(--ztc-text-text-11);
+                font-family: var(--ztc-family-font2);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;  
+                transition: all .4s;             
+            }
+        }
+    }
+
+    .about5-header {
+        padding: 0 70px;
+        @media #{$xs} {
+            padding: 0;
+            margin-top: 30px;
+            text-align: center;
+        }
+        @media #{$md} {
+            padding: 0;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+    .images {
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+
+        }
+    }
+}
+/*============= ABOUT CSS AREA ENDS ===============*/
